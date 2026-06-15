@@ -1,0 +1,21 @@
+{
+  "config": {
+    "ann_file": "/root/autodl-tmp/fashionpedia/annotations/instances_attributes_val2020.json",
+    "img_dir": "/root/autodl-tmp/fashionpedia/images/test",
+    "output_dir": "/root/autodl-tmp/Grounded-SAM-2/outputs/fashionpedia_baseline_category",
+    "prompt_mode": "category",
+    "max_images": 50,
+    "seed": 42,
+    "box_threshold": 0.35,
+    "text_threshold": 0.25,
+    "save_vis": 20,
+    "device": "cuda"
+  },
+  "num_instances": 50,
+  "detection_rate": 0.96,
+  "mean_box_iou": 0.7586620381474495,
+  "mean_mask_iou": 0.7033285821544155,
+  "mean_mask_dice": 0.7555101824036241,
+  "box_iou@0.5": 0.78,
+  "mask_iou@0.5": 0.74
+}

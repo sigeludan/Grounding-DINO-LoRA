@@ -1,0 +1,81 @@
+{
+  "config": {
+    "ann_file": "/root/autodl-tmp/fashionpedia/annotations/instances_attributes_val2020.json",
+    "img_dir": "/root/autodl-tmp/fashionpedia/images/test",
+    "max_images": 50000,
+    "seed": 42,
+    "strategies": [
+      "baseline",
+      "descriptive",
+      "synonyms",
+      "multi_term",
+      "ecommerce"
+    ]
+  },
+  "strategy_descriptions": {
+    "baseline": "\u4e3b\u7c7b\u540d\uff08\u9017\u53f7\u524d\u7b2c\u4e00\u4e2a\u8bcd\uff09",
+    "descriptive": "\u52a0\u7ed3\u6784\u63cf\u8ff0\u8bcd\uff08fashion / clothing / garment\uff09",
+    "synonyms": "\u7c7b\u76ee\u5168\u90e8\u540c\u4e49\u8bcd\u5e76\u5217\uff08\u9017\u53f7\u62c6\u5206\uff09",
+    "multi_term": "\u54c1\u7c7b\u76f8\u5173\u591a\u8bcd\u7ec4\u5408\uff08\u9886\u57df\u8bcd\u8868\uff09",
+    "ecommerce": "\u7535\u5546\u573a\u666f\u63cf\u8ff0\uff08product / apparel / fashion\uff09"
+  },
+  "per_strategy": {
+    "baseline": {
+      "num_instances": 1158,
+      "detection_rate": 0.9326424870466321,
+      "mean_box_iou": 0.6919479489292346,
+      "mean_mask_iou": 0.6228532183086057,
+      "mean_mask_dice": 0.6728021067124272,
+      "box_iou@0.5": 0.7150259067357513,
+      "mask_iou@0.5": 0.6787564766839378
+    },
+    "descriptive": {
+      "num_instances": 1158,
+      "detection_rate": 0.9948186528497409,
+      "mean_box_iou": 0.523464988283237,
+      "mean_mask_iou": 0.4907835108415798,
+      "mean_mask_dice": 0.5297365438249044,
+      "box_iou@0.5": 0.5189982728842832,
+      "mask_iou@0.5": 0.5069084628670121,
+      "vs_baseline_mask_iou": -0.1320697074670258
+    },
+    "synonyms": {
+      "num_instances": 1158,
+      "detection_rate": 0.9378238341968912,
+      "mean_box_iou": 0.7320528637408168,
+      "mean_mask_iou": 0.663198980875556,
+      "mean_mask_dice": 0.7112182893949086,
+      "box_iou@0.5": 0.7651122625215889,
+      "mask_iou@0.5": 0.727979274611399,
+      "vs_baseline_mask_iou": 0.04034576256695032
+    },
+    "multi_term": {
+      "num_instances": 1158,
+      "detection_rate": 0.9265975820379966,
+      "mean_box_iou": 0.6939835141755587,
+      "mean_mask_iou": 0.6275848492805235,
+      "mean_mask_dice": 0.6739071107369126,
+      "box_iou@0.5": 0.7227979274611399,
+      "mask_iou@0.5": 0.6830742659758203,
+      "vs_baseline_mask_iou": 0.004731630971917868
+    },
+    "ecommerce": {
+      "num_instances": 1158,
+      "detection_rate": 0.998272884283247,
+      "mean_box_iou": 0.6344293875371758,
+      "mean_mask_iou": 0.5781076702380858,
+      "mean_mask_dice": 0.6343438603292157,
+      "box_iou@0.5": 0.6442141623488774,
+      "mask_iou@0.5": 0.6105354058721935,
+      "vs_baseline_mask_iou": -0.04474554807051991
+    }
+  },
+  "ranking_by_mask_iou": [
+    "synonyms",
+    "multi_term",
+    "baseline",
+    "ecommerce",
+    "descriptive"
+  ],
+  "best_strategy": "synonyms"
+}

@@ -1,0 +1,23 @@
+{
+  "config": {
+    "ann_file": "/root/autodl-tmp/fashionpedia/annotations/instances_attributes_val2020.json",
+    "img_dir": "/root/autodl-tmp/fashionpedia/images/test",
+    "output_dir": "outputs/fashionpedia_lora_baseline",
+    "prompt_mode": "category",
+    "prompt_strategy": "baseline",
+    "max_images": 1158,
+    "seed": 42,
+    "box_threshold": 0.35,
+    "text_threshold": 0.25,
+    "save_vis": 20,
+    "device": "cuda",
+    "gdino_checkpoint": "/root/autodl-tmp/Grounding-Dino-FineTuning/weights/fashionpedia_lora/20260614_2020/merged_swint_ogc.pth"
+  },
+  "num_instances": 1158,
+  "detection_rate": 0.7409326424870466,
+  "mean_box_iou": 0.6521050685926,
+  "mean_mask_iou": 0.5938079591216462,
+  "mean_mask_dice": 0.632403606533663,
+  "box_iou@0.5": 0.690846286701209,
+  "mask_iou@0.5": 0.6459412780656304
+}

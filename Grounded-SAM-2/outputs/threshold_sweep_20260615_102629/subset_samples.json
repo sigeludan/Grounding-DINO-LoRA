@@ -1,0 +1,1402 @@
+[
+  {
+    "image_id": 19817,
+    "ann_id": 4411,
+    "file_name": "28772cc5485a105f5bf8bfafedfc66b6.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 20328,
+    "ann_id": 4865,
+    "file_name": "1ca6fb4b937bb1f34797d3315266a546.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 16820,
+    "ann_id": 2936,
+    "file_name": "5b119f366a58e6706b6c721fb0c52d9d.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 17769,
+    "ann_id": 2295,
+    "file_name": "1918cddd5d05e007637c1b635eb683f5.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 18949,
+    "ann_id": 3484,
+    "file_name": "9f2b43ca80f1efb145dc87cb63efbb85.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 15823,
+    "ann_id": 667,
+    "file_name": "053888747fe4d05e64411e7454b10881.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15069,
+    "ann_id": 37,
+    "file_name": "d67ad10df9224b51361c9dfb18f5a9ef.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 9507,
+    "ann_id": 5719,
+    "file_name": "c4e7ac9027ce6e052eb110b1281a8638.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 11372,
+    "ann_id": 7413,
+    "file_name": "ff62c585aa0fd3f69a17717015e80fb6.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 9914,
+    "ann_id": 6168,
+    "file_name": "46c1433283e5cfba916f741bc681b99b.jpg",
+    "category_id": 0,
+    "category": "shirt, blouse"
+  },
+  {
+    "image_id": 12524,
+    "ann_id": 8345,
+    "file_name": "db26dd4ab74b3f12041cc72ff6acb60d.jpg",
+    "category_id": 32,
+    "category": "pocket"
+  },
+  {
+    "image_id": 20542,
+    "ann_id": 5067,
+    "file_name": "fb24ea2a89e0ec6dc4b093ccbb2fc743.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 9411,
+    "ann_id": 5666,
+    "file_name": "563c45745e1775a74e3a5b2513079b9d.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 20250,
+    "ann_id": 4776,
+    "file_name": "cfe1c4de7beeb5eef7cdc05e8be73d57.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 17329,
+    "ann_id": 1931,
+    "file_name": "bba3aec79e766cc1375de76bbe6493bb.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 20180,
+    "ann_id": 4694,
+    "file_name": "c650f80f25497fb2b0f1231d1e487878.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15949,
+    "ann_id": 844,
+    "file_name": "85aa83033214755fefff61b7615c7a48.jpg",
+    "category_id": 43,
+    "category": "ruffle"
+  },
+  {
+    "image_id": 16010,
+    "ann_id": 907,
+    "file_name": "50e763ae42f2872db7567e607005d3b1.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 9465,
+    "ann_id": 5689,
+    "file_name": "3af3a8c1e0581011f46326d3b837a53d.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 14700,
+    "ann_id": 778,
+    "file_name": "e712b9ad744015f1208a2b6eee27afcf.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 11765,
+    "ann_id": 7720,
+    "file_name": "dcbdac96042c96e1fcd4f5e344c3ea43.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15860,
+    "ann_id": 691,
+    "file_name": "4dfb4420e88d33d4d1fe455ad77d7901.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 14811,
+    "ann_id": 789,
+    "file_name": "53299262e048171c51fb3673c5b85a08.jpg",
+    "category_id": 13,
+    "category": "glasses"
+  },
+  {
+    "image_id": 15279,
+    "ann_id": 205,
+    "file_name": "3fcfa9cf841c43da1cf40ff998939b21.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 19795,
+    "ann_id": 4332,
+    "file_name": "e5b237935c0a652dc6585eea57e61dc8.jpg",
+    "category_id": 9,
+    "category": "coat"
+  },
+  {
+    "image_id": 17856,
+    "ann_id": 2368,
+    "file_name": "0229bef01efc25f915374d55f59cbfdd.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 15924,
+    "ann_id": 1615,
+    "file_name": "872fc33127ea1bff445f180e91ea979f.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 17449,
+    "ann_id": 2028,
+    "file_name": "3641da2171647a07f88dae8d53c9a6a3.jpg",
+    "category_id": 19,
+    "category": "belt"
+  },
+  {
+    "image_id": 10732,
+    "ann_id": 6804,
+    "file_name": "2cf13e48204a0e45bb0a58cf05b53c06.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 12785,
+    "ann_id": 8556,
+    "file_name": "c04e7cf82a3d0216dabe151f5fc05c24.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 14432,
+    "ann_id": 752,
+    "file_name": "0ebe6d8449aed07be683fd778a4092d1.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15225,
+    "ann_id": 136,
+    "file_name": "0544acba02e8776a56fde74f83633c21.jpg",
+    "category_id": 7,
+    "category": "shorts"
+  },
+  {
+    "image_id": 18204,
+    "ann_id": 2645,
+    "file_name": "c0a478558194a03c19b1ac9d61d5777c.jpg",
+    "category_id": 7,
+    "category": "shorts"
+  },
+  {
+    "image_id": 18319,
+    "ann_id": 2716,
+    "file_name": "176c976ed8edcf21eebef9de662adc18.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 17848,
+    "ann_id": 2355,
+    "file_name": "4cea97e3bd3c0e426073cf4fe482b9ad.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 11393,
+    "ann_id": 7453,
+    "file_name": "858f141535ac0b2aeef9278577da78b6.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 18044,
+    "ann_id": 2532,
+    "file_name": "1b94b1ccf1076bf96d656a870f559d0e.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 9703,
+    "ann_id": 5976,
+    "file_name": "a6f3960744c8db184ecb0f6112b7988e.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 11614,
+    "ann_id": 7618,
+    "file_name": "dbbc57a65ecd459890dfd87b72288f70.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 11931,
+    "ann_id": 7844,
+    "file_name": "31376f97ef5d1d083e6f1092d5d33b7b.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 12215,
+    "ann_id": 8100,
+    "file_name": "9a886a145d0a9f81b15e79666a5c51b1.jpg",
+    "category_id": 24,
+    "category": "bag, wallet"
+  },
+  {
+    "image_id": 17515,
+    "ann_id": 2061,
+    "file_name": "ada83e10834aa11414790cb9b9955aea.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 12942,
+    "ann_id": 8705,
+    "file_name": "7f9007ed8484e01e26dee5e2e7a633bf.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 19292,
+    "ann_id": 3811,
+    "file_name": "733c7993cb2b7f5abd3fe0ec9988137f.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 15891,
+    "ann_id": 730,
+    "file_name": "69b505aa605512169cdbf485fc8b9718.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15729,
+    "ann_id": 581,
+    "file_name": "3a87ce99efb87686869fdb390cc5ef0c.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 10904,
+    "ann_id": 6983,
+    "file_name": "c20cd495aea72107c49299e4f957ef2b.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 18908,
+    "ann_id": 3427,
+    "file_name": "3a251a0d83018173d9eb85dd2f7c64f1.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 9656,
+    "ann_id": 5899,
+    "file_name": "420f153001eb2e37269ae974b9f7665e.jpg",
+    "category_id": 43,
+    "category": "ruffle"
+  },
+  {
+    "image_id": 17108,
+    "ann_id": 2978,
+    "file_name": "63428001d1dead4d5afcbabfc9777c67.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 16528,
+    "ann_id": 1242,
+    "file_name": "643befc8433653bd7647f45c3c89b02f.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 9136,
+    "ann_id": 6586,
+    "file_name": "3f18271f3f7d101e2f9a27b0b12b034b.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 20159,
+    "ann_id": 4675,
+    "file_name": "2e0668607ef88383e3fae4925b12cef8.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 16651,
+    "ann_id": 1346,
+    "file_name": "54b5226293d7cf8eabc1421062284a05.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 10018,
+    "ann_id": 6234,
+    "file_name": "aaf6934258f226a68996b5922fa3f038.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 9645,
+    "ann_id": 5886,
+    "file_name": "bf220f1c9ef47e7338d32cd082ecc15c.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 16672,
+    "ann_id": 1362,
+    "file_name": "627bfa841f072062e0cbeeff330787eb.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 18707,
+    "ann_id": 3260,
+    "file_name": "9f8e805a62be868379e13cfa24658106.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 9992,
+    "ann_id": 6204,
+    "file_name": "d56bf67bd74cb0f2128007818675a465.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 17882,
+    "ann_id": 2395,
+    "file_name": "8894e8a608e0fc8b08f4f529b75a13b0.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 16500,
+    "ann_id": 1213,
+    "file_name": "4d200cb316a6260257ce84b37e25161c.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 16610,
+    "ann_id": 1310,
+    "file_name": "bd9c22e3a70ec0d7b77d3c4d10551241.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 17725,
+    "ann_id": 2243,
+    "file_name": "fa798612385be732aa8a70fb56d8bed0.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 16062,
+    "ann_id": 934,
+    "file_name": "d42681a6b954af2d04e2aaaf9c1bba84.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 18179,
+    "ann_id": 2619,
+    "file_name": "b5c8c768b2bc55ca312ffcbdabbc4acd.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 16222,
+    "ann_id": 1030,
+    "file_name": "6c91cc6e1c07e9336e3c00d1569ac1c5.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 19133,
+    "ann_id": 3654,
+    "file_name": "165fc69c577be6c18128e057487cf489.jpg",
+    "category_id": 14,
+    "category": "hat"
+  },
+  {
+    "image_id": 9069,
+    "ann_id": 5353,
+    "file_name": "22edb152f5dcafd163ccf1e70d005e38.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 8950,
+    "ann_id": 5269,
+    "file_name": "c1cd92903be0c82b188fb8d191770887.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 20257,
+    "ann_id": 4746,
+    "file_name": "2b2de1517e4ce95fc961f0be4d0a41e9.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 19099,
+    "ann_id": 3639,
+    "file_name": "aa8e34255bae5532e3c45385009a8d9a.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 9347,
+    "ann_id": 5603,
+    "file_name": "b0c2003291bafdda48c2cc3c229dfda0.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 10584,
+    "ann_id": 7282,
+    "file_name": "f1413790cd71f17dfb71065d96263992.jpg",
+    "category_id": 35,
+    "category": "zipper"
+  },
+  {
+    "image_id": 10382,
+    "ann_id": 6427,
+    "file_name": "6beae9033a9244991b99ac04347ba917.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 20242,
+    "ann_id": 4740,
+    "file_name": "2aa229d7589a06e59c4eb1f05162f9ab.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 12775,
+    "ann_id": 8545,
+    "file_name": "d143e41db607aaeff07a69ca9a5e704c.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15781,
+    "ann_id": 629,
+    "file_name": "6c25f5b9177191c25b74f167d361e114.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 11242,
+    "ann_id": 8969,
+    "file_name": "458aec6dd827b8585dbfeeb7bd4cf4c9.jpg",
+    "category_id": 18,
+    "category": "watch"
+  },
+  {
+    "image_id": 17969,
+    "ann_id": 2410,
+    "file_name": "2ab8deb3a77d67416d2a5eeebd6a4d72.jpg",
+    "category_id": 15,
+    "category": "headband, head covering, hair accessory"
+  },
+  {
+    "image_id": 18760,
+    "ann_id": 3333,
+    "file_name": "5ada94993430e73f1e6967d5ce2aecad.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 15161,
+    "ann_id": 107,
+    "file_name": "76865174d4c6dd61ba58e6ed3413295f.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 13162,
+    "ann_id": 8826,
+    "file_name": "255989bbfb631c18a52e16690eae4545.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 15331,
+    "ann_id": 243,
+    "file_name": "6de0db96e14807a6824c20a3e4985fa9.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 5593,
+    "ann_id": 342,
+    "file_name": "5f1a6fc913ba40dee4d94b3428afba15.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 18909,
+    "ann_id": 3441,
+    "file_name": "01a64310ea9205193295869fcae93f90.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 11856,
+    "ann_id": 9012,
+    "file_name": "28f3172e9e96bb17c1f9ec3697b175bc.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 10811,
+    "ann_id": 6882,
+    "file_name": "0bbb948a0876edce2827a164c6783fbe.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 9227,
+    "ann_id": 5518,
+    "file_name": "a2085bd21aaddd5c1f59d53fa670d8c6.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 12674,
+    "ann_id": 8478,
+    "file_name": "1ca4458d23522f006de2ffda045c3b44.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15421,
+    "ann_id": 1586,
+    "file_name": "05488fcc74f81ae452dd55229003f58f.jpg",
+    "category_id": 14,
+    "category": "hat"
+  },
+  {
+    "image_id": 20499,
+    "ann_id": 5015,
+    "file_name": "ebd81bb9fb007fec37ab093678f48b21.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 19455,
+    "ann_id": 3933,
+    "file_name": "e4dc2ffc35e68dd07dd67e7f575281b9.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 8671,
+    "ann_id": 6044,
+    "file_name": "c8183194c22ace7c7bbe6f224ea525bb.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 20639,
+    "ann_id": 5154,
+    "file_name": "228d6f335e7c88d524d4bd4c8bdebd1d.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 16160,
+    "ann_id": 1001,
+    "file_name": "d32d4af30a095bfe47c8cb3c0e09935a.jpg",
+    "category_id": 4,
+    "category": "jacket"
+  },
+  {
+    "image_id": 9880,
+    "ann_id": 6669,
+    "file_name": "8ffb6a0c280839553fa4025f3135d178.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 12107,
+    "ann_id": 8028,
+    "file_name": "0bbaa62211cc48b57957aab152fba023.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 12704,
+    "ann_id": 8492,
+    "file_name": "73565a1d1eab156d8d17f9f481d7d54e.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 18812,
+    "ann_id": 3351,
+    "file_name": "1b392a7577346eb050da07a9b7ea3c72.jpg",
+    "category_id": 28,
+    "category": "collar"
+  },
+  {
+    "image_id": 10727,
+    "ann_id": 6801,
+    "file_name": "cdd27e07ef7ddf8d413bb13936241ac4.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 19495,
+    "ann_id": 4047,
+    "file_name": "a5faa285a9bdc4fd48c22381fd2d4108.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 16566,
+    "ann_id": 1267,
+    "file_name": "d71f379a691017d51634b13d7abc1350.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 9835,
+    "ann_id": 6110,
+    "file_name": "c658c6a2698fc988c5e25000814cb2b0.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 16896,
+    "ann_id": 1629,
+    "file_name": "0617757485dad98ded988c6e101c8bf2.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 19876,
+    "ann_id": 4490,
+    "file_name": "d3288584fffb4caeb8a392304b09ce93.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 12729,
+    "ann_id": 8517,
+    "file_name": "89144779b3e40421facdb2eb70309356.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 16059,
+    "ann_id": 950,
+    "file_name": "df9a2621439cbb8c39ed47a9072864c4.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 15738,
+    "ann_id": 1711,
+    "file_name": "e2a1712cc3928d83e0339e5cb3832fec.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 9540,
+    "ann_id": 5769,
+    "file_name": "a2d2041ec86da596439a8fd74575ce0b.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 19602,
+    "ann_id": 4130,
+    "file_name": "ba49f22a7e2927ec0df677e4d199c93d.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 13557,
+    "ann_id": 9251,
+    "file_name": "7450a0ad431b3446ab57608050095649.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 15699,
+    "ann_id": 541,
+    "file_name": "bcdfe9978dc95b41eada90b84fa0741c.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 10604,
+    "ann_id": 8148,
+    "file_name": "f4ff8848ec3b50fc969666ee2662bff7.jpg",
+    "category_id": 4,
+    "category": "jacket"
+  },
+  {
+    "image_id": 10795,
+    "ann_id": 6856,
+    "file_name": "35eb7f5fb76a9ed5aec684be53761cff.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 19853,
+    "ann_id": 4458,
+    "file_name": "a0157697c907f7fb762702ca3e9ab259.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 16331,
+    "ann_id": 1086,
+    "file_name": "d941732e5b6c817f7981cf6831c103a0.jpg",
+    "category_id": 32,
+    "category": "pocket"
+  },
+  {
+    "image_id": 16182,
+    "ann_id": 1010,
+    "file_name": "9e35bff1f530e353ce2844823e27fe28.jpg",
+    "category_id": 15,
+    "category": "headband, head covering, hair accessory"
+  },
+  {
+    "image_id": 16553,
+    "ann_id": 1262,
+    "file_name": "cef7317d699eb4899f181a570b1502e0.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 11284,
+    "ann_id": 7348,
+    "file_name": "ec3d4bc8f46f26f1012ea9f2f43060b0.jpg",
+    "category_id": 13,
+    "category": "glasses"
+  },
+  {
+    "image_id": 17419,
+    "ann_id": 1990,
+    "file_name": "b0ed46a2ed52c32e7a1c2c47cebf3f70.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 12565,
+    "ann_id": 8414,
+    "file_name": "6e2652e279a03035a8a0190ba461d247.jpg",
+    "category_id": 42,
+    "category": "rivet"
+  },
+  {
+    "image_id": 19498,
+    "ann_id": 4055,
+    "file_name": "bf08a1955bfce99f913046ef11600913.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 18347,
+    "ann_id": 2986,
+    "file_name": "9078e17f7b8381d1600608b588ccbd45.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 10149,
+    "ann_id": 6282,
+    "file_name": "bd4c2ae0478c2162033a02216e394604.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 11859,
+    "ann_id": 7778,
+    "file_name": "31bbe8edffb11d49563d77dd3fa29610.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 13037,
+    "ann_id": 8738,
+    "file_name": "f2cf1eff03298dcaf840385c787165f8.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 12305,
+    "ann_id": 8223,
+    "file_name": "064c8022b32931e787260d81ed5aafe8.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 15676,
+    "ann_id": 507,
+    "file_name": "fcc71ab647c43d3bdae6ba5e9349464d.jpg",
+    "category_id": 4,
+    "category": "jacket"
+  },
+  {
+    "image_id": 18620,
+    "ann_id": 3189,
+    "file_name": "3d1a8d1323ab2feae0530606f883e2c7.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 17847,
+    "ann_id": 2347,
+    "file_name": "67ec64b00cd3aa7ab1d92c59e5d8fd85.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 19124,
+    "ann_id": 3577,
+    "file_name": "25d4e40003f6739349121db096771d58.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 19882,
+    "ann_id": 4497,
+    "file_name": "1e54ccbc575eac627de68b221913fc52.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 11465,
+    "ann_id": 7520,
+    "file_name": "6c8b75eda84586938870b9715fd35181.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 17087,
+    "ann_id": 1674,
+    "file_name": "320e6497373a2f91a108044407c69a9e.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 16778,
+    "ann_id": 1491,
+    "file_name": "07a7bc9429c23e4704ab97898de75030.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 19774,
+    "ann_id": 4316,
+    "file_name": "c8bb6c6fde01f900ab9534e214f30de4.jpg",
+    "category_id": 4,
+    "category": "jacket"
+  },
+  {
+    "image_id": 17413,
+    "ann_id": 1982,
+    "file_name": "91d63e4fe4777e2d1a6e7f9e6f93de2d.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 11572,
+    "ann_id": 7582,
+    "file_name": "350932dd5559f9419cbd1fc1ae0e43e1.jpg",
+    "category_id": 20,
+    "category": "leg warmer"
+  },
+  {
+    "image_id": 11917,
+    "ann_id": 8004,
+    "file_name": "d23d0383fa7e5e512eba48cdf9b8f5cb.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 9891,
+    "ann_id": 6142,
+    "file_name": "065fd62a332e15121c5f8713a5bc6bbc.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 11593,
+    "ann_id": 7595,
+    "file_name": "a22769bf38c0acd680854bd5588e8075.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 12449,
+    "ann_id": 8276,
+    "file_name": "470281287b961aa83407820eaf2cbf5c.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 8955,
+    "ann_id": 5279,
+    "file_name": "f6d5d138127a985997df20d4cad1b276.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 8988,
+    "ann_id": 5310,
+    "file_name": "e10a8dac9a4b0e4bb4424593fe187953.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 11122,
+    "ann_id": 7205,
+    "file_name": "4d6c4b89ddc23629a730a46aaba04903.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 11013,
+    "ann_id": 7124,
+    "file_name": "bd8d3293d99b77a3fa0ec0dd058235dc.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 20028,
+    "ann_id": 4593,
+    "file_name": "5ab87e352be3b0c045cf417957013ecc.jpg",
+    "category_id": 26,
+    "category": "umbrella"
+  },
+  {
+    "image_id": 8457,
+    "ann_id": 5761,
+    "file_name": "4aa62ca489ce6e163ca8400d4c96b569.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 12128,
+    "ann_id": 8044,
+    "file_name": "d7da3cf290a8f293ed39dff8ed1ef376.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 18987,
+    "ann_id": 3510,
+    "file_name": "12bf6fb74bf3a422429b71f23210d5fa.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 19669,
+    "ann_id": 4221,
+    "file_name": "f6199582b266562fc8fb77d7ed18c068.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 9083,
+    "ann_id": 5382,
+    "file_name": "985a2c07b12b20673074487049fdd68e.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 15515,
+    "ann_id": 382,
+    "file_name": "72a138c47a27759553ebb2b2c1a94707.jpg",
+    "category_id": 28,
+    "category": "collar"
+  },
+  {
+    "image_id": 15655,
+    "ann_id": 486,
+    "file_name": "fac06865b4cba1c6f61a48a75848b626.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 9794,
+    "ann_id": 6092,
+    "file_name": "38f9af46bc5456b86585c68acbb089d3.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 19701,
+    "ann_id": 4256,
+    "file_name": "b2686172341f1d7a8b36b72194aad82e.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 9151,
+    "ann_id": 6594,
+    "file_name": "9c2944165b3d4390a3aa62dc0a07fe7e.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 9743,
+    "ann_id": 6063,
+    "file_name": "5c02879d04dacef50fe83f81243788df.jpg",
+    "category_id": 4,
+    "category": "jacket"
+  },
+  {
+    "image_id": 12211,
+    "ann_id": 8089,
+    "file_name": "5335b8ea8a70be860bc310864bc7d8d1.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 12153,
+    "ann_id": 8053,
+    "file_name": "a8741d59e6609bfc5f6abfa00fd6b431.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 13534,
+    "ann_id": 9232,
+    "file_name": "3b3fc92c529527b7c1dbe7d45c281beb.jpg",
+    "category_id": 6,
+    "category": "pants"
+  },
+  {
+    "image_id": 12360,
+    "ann_id": 8263,
+    "file_name": "b1682bc7e7fb2a0d868f75a9fcc03b82.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 10808,
+    "ann_id": 6871,
+    "file_name": "81d5078514e93327f0ef0461be35faa6.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 16526,
+    "ann_id": 1238,
+    "file_name": "eb5165caf84a1a737f36bfa47a06c053.jpg",
+    "category_id": 32,
+    "category": "pocket"
+  },
+  {
+    "image_id": 13585,
+    "ann_id": 9290,
+    "file_name": "9888899a5551c6148dacc986272a4ff0.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 18406,
+    "ann_id": 2992,
+    "file_name": "91d2989ccce4a5b3e4789f48b4e05a68.jpg",
+    "category_id": 43,
+    "category": "ruffle"
+  },
+  {
+    "image_id": 20503,
+    "ann_id": 5022,
+    "file_name": "21dd915650694b8a5b17aa9e442bb079.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 11303,
+    "ann_id": 7370,
+    "file_name": "e4432c751c332f2f5829e6a1ebb7301d.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 10742,
+    "ann_id": 4563,
+    "file_name": "9f6a012fdb962c60a7f95bb7472a3c6c.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 12486,
+    "ann_id": 8336,
+    "file_name": "c23406e7d038f1d5b46c900bf9e3e309.jpg",
+    "category_id": 32,
+    "category": "pocket"
+  },
+  {
+    "image_id": 20405,
+    "ann_id": 4908,
+    "file_name": "7a65f8ca901b6307715350452dff10b6.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 11880,
+    "ann_id": 7789,
+    "file_name": "771969fa224f15b6514628d98b8e60d7.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 19641,
+    "ann_id": 4168,
+    "file_name": "15e1718954473a29738aa932ba31719c.jpg",
+    "category_id": 15,
+    "category": "headband, head covering, hair accessory"
+  },
+  {
+    "image_id": 20511,
+    "ann_id": 5044,
+    "file_name": "b75c28867e64db0d890e186710005eeb.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 13043,
+    "ann_id": 8752,
+    "file_name": "e9d63492d0b43ec71ac6c9d8a6bb5b62.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 13106,
+    "ann_id": 8804,
+    "file_name": "86f139c6fe14c64090091230a78862fd.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 9692,
+    "ann_id": 5949,
+    "file_name": "fd567ffad275955ac945eeeacc1fdac5.jpg",
+    "category_id": 39,
+    "category": "flower"
+  },
+  {
+    "image_id": 8519,
+    "ann_id": 6031,
+    "file_name": "1c906b2d4f414e1e7ed064abc0606a0a.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 13312,
+    "ann_id": 8933,
+    "file_name": "7f5c5ed02e62a9afea01d6a60ac5e768.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 11972,
+    "ann_id": 7856,
+    "file_name": "78c76bd3d70e760b4b59fde91b1cc03f.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 15125,
+    "ann_id": 96,
+    "file_name": "7f7cbaa6ea88b24f0e81c06355b380dc.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 11097,
+    "ann_id": 7155,
+    "file_name": "5abd76c03bfe9417a51ef66b920e6ad9.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 18001,
+    "ann_id": 2471,
+    "file_name": "7364f45820e10eb53b3b6827c2b08516.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 16806,
+    "ann_id": 1501,
+    "file_name": "3ad8d42ba64449a7617160489b43cffb.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 9312,
+    "ann_id": 5595,
+    "file_name": "8d1d4b14e598bafb3d718fa8c096e95e.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 13326,
+    "ann_id": 8948,
+    "file_name": "68a8ab13c1413b5e8252fd7736e88860.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 15649,
+    "ann_id": 5162,
+    "file_name": "bafce6a94544af54357177ff7bbd7453.jpg",
+    "category_id": 13,
+    "category": "glasses"
+  },
+  {
+    "image_id": 13395,
+    "ann_id": 9062,
+    "file_name": "4dc413ef5a47c5da696ba2f72835e6ed.jpg",
+    "category_id": 4,
+    "category": "jacket"
+  },
+  {
+    "image_id": 9236,
+    "ann_id": 5533,
+    "file_name": "96b202445bdc16ebc3e93ae5788ed63e.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 11298,
+    "ann_id": 7362,
+    "file_name": "42e223bd6f6a6b8dce57c4496ca4fcc2.jpg",
+    "category_id": 14,
+    "category": "hat"
+  },
+  {
+    "image_id": 12913,
+    "ann_id": 8681,
+    "file_name": "d2c69d175a69a01fe09597583fa740a3.jpg",
+    "category_id": 10,
+    "category": "dress"
+  },
+  {
+    "image_id": 10848,
+    "ann_id": 6914,
+    "file_name": "faef680c9ba90bd6852e6bc759341896.jpg",
+    "category_id": 8,
+    "category": "skirt"
+  },
+  {
+    "image_id": 15984,
+    "ann_id": 2817,
+    "file_name": "6804c0168b384deb92f498ba8ed5ca4a.jpg",
+    "category_id": 1,
+    "category": "top, t-shirt, sweatshirt"
+  },
+  {
+    "image_id": 17085,
+    "ann_id": 1671,
+    "file_name": "ac14ee8a27be712ac0123b69d376b0be.jpg",
+    "category_id": 33,
+    "category": "neckline"
+  },
+  {
+    "image_id": 15851,
+    "ann_id": 684,
+    "file_name": "708b614476f051e6a165f1f124a269a8.jpg",
+    "category_id": 23,
+    "category": "shoe"
+  },
+  {
+    "image_id": 16953,
+    "ann_id": 1642,
+    "file_name": "13bd73c2068bc2705f3a0b65e425b965.jpg",
+    "category_id": 24,
+    "category": "bag, wallet"
+  },
+  {
+    "image_id": 9690,
+    "ann_id": 5939,
+    "file_name": "20cce77f20aada8462856157a7957d8f.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  },
+  {
+    "image_id": 13560,
+    "ann_id": 9262,
+    "file_name": "b360c19580caf49e561173fab54bfdb2.jpg",
+    "category_id": 19,
+    "category": "belt"
+  },
+  {
+    "image_id": 15565,
+    "ann_id": 449,
+    "file_name": "12416f707a0428adc08bc899bc6d84c8.jpg",
+    "category_id": 19,
+    "category": "belt"
+  },
+  {
+    "image_id": 20397,
+    "ann_id": 4903,
+    "file_name": "0fd47405bde971ea795259fa8790ef40.jpg",
+    "category_id": 31,
+    "category": "sleeve"
+  }
+]

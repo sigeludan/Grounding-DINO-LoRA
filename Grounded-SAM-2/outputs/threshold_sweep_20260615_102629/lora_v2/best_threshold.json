@@ -1,0 +1,9 @@
+{
+  "model": "lora_v2",
+  "checkpoint": "/root/autodl-tmp/Grounding-Dino-FineTuning/weights/fashionpedia_lora/20260614_2321/merged_swint_ogc.pth",
+  "best_box_threshold": 0.15,
+  "best_text_threshold": 0.15,
+  "best_mean_mask_iou": 0.763083677203135,
+  "best_detection_rate": 0.965,
+  "best_mean_box_iou": 0.8555154460668564
+}

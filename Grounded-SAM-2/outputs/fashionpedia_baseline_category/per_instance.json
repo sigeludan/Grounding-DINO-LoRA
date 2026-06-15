@@ -1,0 +1,1347 @@
+[
+  {
+    "index": 0,
+    "image_id": 19817,
+    "ann_id": 4411,
+    "file_name": "28772cc5485a105f5bf8bfafedfc66b6.jpg",
+    "category": "neckline",
+    "prompt": "neckline.",
+    "num_detections": 0,
+    "detected": false,
+    "box_iou": 0.0,
+    "mask_iou": 0.0,
+    "mask_dice": 0.0,
+    "pred_confidence": 0.0,
+    "pred_phrase": "",
+    "gt_bbox_xywh": [
+      273.0,
+      195.0,
+      103.0,
+      19.0
+    ],
+    "pred_bbox_xyxy": null
+  },
+  {
+    "index": 1,
+    "image_id": 20328,
+    "ann_id": 4865,
+    "file_name": "1ca6fb4b937bb1f34797d3315266a546.jpg",
+    "category": "sleeve",
+    "prompt": "sleeve.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9064074754714966,
+    "mask_iou": 0.88732741617357,
+    "mask_dice": 0.9403004572175049,
+    "pred_confidence": 0.4460081458091736,
+    "pred_phrase": "sleeve",
+    "gt_bbox_xywh": [
+      637.0,
+      424.0,
+      87.0,
+      213.0
+    ],
+    "pred_bbox_xyxy": [
+      637.64208984375,
+      436.87548828125,
+      722.291748046875,
+      638.8746337890625
+    ]
+  },
+  {
+    "index": 2,
+    "image_id": 16820,
+    "ann_id": 2936,
+    "file_name": "5b119f366a58e6706b6c721fb0c52d9d.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9188193082809448,
+    "mask_iou": 0.9372044742853572,
+    "mask_dice": 0.9675844617601308,
+    "pred_confidence": 0.7751811146736145,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      186.0,
+      333.0,
+      359.0,
+      650.0
+    ],
+    "pred_bbox_xyxy": [
+      197.5116729736328,
+      316.6258544921875,
+      541.6793212890625,
+      971.015869140625
+    ]
+  },
+  {
+    "index": 3,
+    "image_id": 17769,
+    "ann_id": 2295,
+    "file_name": "1918cddd5d05e007637c1b635eb683f5.jpg",
+    "category": "top, t-shirt, sweatshirt",
+    "prompt": "top.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9694568514823914,
+    "mask_iou": 0.9277213194935058,
+    "mask_dice": 0.9625056382498872,
+    "pred_confidence": 0.36210396885871887,
+    "pred_phrase": "top",
+    "gt_bbox_xywh": [
+      165.0,
+      303.0,
+      181.0,
+      191.0
+    ],
+    "pred_bbox_xyxy": [
+      165.48606872558594,
+      302.72027587890625,
+      348.33294677734375,
+      496.71630859375
+    ]
+  },
+  {
+    "index": 4,
+    "image_id": 18949,
+    "ann_id": 3484,
+    "file_name": "9f2b43ca80f1efb145dc87cb63efbb85.jpg",
+    "category": "skirt",
+    "prompt": "skirt.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9815465211868286,
+    "mask_iou": 0.9479713092816615,
+    "mask_dice": 0.9732908331501429,
+    "pred_confidence": 0.8433853983879089,
+    "pred_phrase": "skirt",
+    "gt_bbox_xywh": [
+      284.0,
+      509.0,
+      249.0,
+      261.0
+    ],
+    "pred_bbox_xyxy": [
+      285.69610595703125,
+      510.62042236328125,
+      532.6053466796875,
+      771.0459594726562
+    ]
+  },
+  {
+    "index": 5,
+    "image_id": 15823,
+    "ann_id": 667,
+    "file_name": "053888747fe4d05e64411e7454b10881.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9027692079544067,
+    "mask_iou": 0.9367003367003367,
+    "mask_dice": 0.9673157162726008,
+    "pred_confidence": 0.7759637236595154,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      368.0,
+      263.0,
+      183.0,
+      417.0
+    ],
+    "pred_bbox_xyxy": [
+      383.9146423339844,
+      259.8953552246094,
+      551.5983276367188,
+      679.470703125
+    ]
+  },
+  {
+    "index": 6,
+    "image_id": 15069,
+    "ann_id": 37,
+    "file_name": "d67ad10df9224b51361c9dfb18f5a9ef.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 4,
+    "detected": true,
+    "box_iou": 0.8888798952102661,
+    "mask_iou": 0.8646510313647923,
+    "mask_dice": 0.9274132444309744,
+    "pred_confidence": 0.8146554827690125,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      210.0,
+      907.0,
+      65.0,
+      68.0
+    ],
+    "pred_bbox_xyxy": [
+      212.48678588867188,
+      908.4706420898438,
+      275.7251281738281,
+      978.3308715820312
+    ]
+  },
+  {
+    "index": 7,
+    "image_id": 9507,
+    "ann_id": 5719,
+    "file_name": "c4e7ac9027ce6e052eb110b1281a8638.jpg",
+    "category": "top, t-shirt, sweatshirt",
+    "prompt": "top.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.19579537212848663,
+    "mask_iou": 0.18741231942077782,
+    "mask_dice": 0.31566510866620945,
+    "pred_confidence": 0.388668954372406,
+    "pred_phrase": "top",
+    "gt_bbox_xywh": [
+      51.0,
+      171.0,
+      248.0,
+      231.0
+    ],
+    "pred_bbox_xyxy": [
+      53.8248291015625,
+      34.598602294921875,
+      351.1634216308594,
+      1005.2291259765625
+    ]
+  },
+  {
+    "index": 8,
+    "image_id": 11372,
+    "ann_id": 7413,
+    "file_name": "ff62c585aa0fd3f69a17717015e80fb6.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9923933744430542,
+    "mask_iou": 0.9593599685874153,
+    "mask_dice": 0.9792585170340682,
+    "pred_confidence": 0.8890516757965088,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      203.0,
+      240.0,
+      317.0,
+      645.0
+    ],
+    "pred_bbox_xyxy": [
+      202.76913452148438,
+      241.8485107421875,
+      519.3277587890625,
+      886.240234375
+    ]
+  },
+  {
+    "index": 9,
+    "image_id": 9914,
+    "ann_id": 6168,
+    "file_name": "46c1433283e5cfba916f741bc681b99b.jpg",
+    "category": "shirt, blouse",
+    "prompt": "shirt.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9917771220207214,
+    "mask_iou": 0.9633156847156205,
+    "mask_dice": 0.9813151213684247,
+    "pred_confidence": 0.8200920820236206,
+    "pred_phrase": "shirt",
+    "gt_bbox_xywh": [
+      0.0,
+      137.0,
+      667.0,
+      654.0
+    ],
+    "pred_bbox_xyxy": [
+      2.934661865234375,
+      137.2784423828125,
+      667.2587890625,
+      792.9959106445312
+    ]
+  },
+  {
+    "index": 10,
+    "image_id": 12524,
+    "ann_id": 8345,
+    "file_name": "db26dd4ab74b3f12041cc72ff6acb60d.jpg",
+    "category": "pocket",
+    "prompt": "pocket.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.33840152621269226,
+    "mask_iou": 0.25269221136989733,
+    "mask_dice": 0.4034386245501799,
+    "pred_confidence": 0.5836111307144165,
+    "pred_phrase": "pocket",
+    "gt_bbox_xywh": [
+      475.0,
+      245.0,
+      55.0,
+      38.0
+    ],
+    "pred_bbox_xyxy": [
+      456.947509765625,
+      245.53558349609375,
+      531.1038818359375,
+      327.249267578125
+    ]
+  },
+  {
+    "index": 11,
+    "image_id": 20542,
+    "ann_id": 5067,
+    "file_name": "fb24ea2a89e0ec6dc4b093ccbb2fc743.jpg",
+    "category": "neckline",
+    "prompt": "neckline.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.05062313377857208,
+    "mask_iou": 0.0,
+    "mask_dice": 0.0,
+    "pred_confidence": 0.49396300315856934,
+    "pred_phrase": "neckline",
+    "gt_bbox_xywh": [
+      284.0,
+      193.0,
+      118.0,
+      81.0
+    ],
+    "pred_bbox_xyxy": [
+      314.13330078125,
+      156.16917419433594,
+      376.68212890625,
+      202.6001434326172
+    ]
+  },
+  {
+    "index": 12,
+    "image_id": 9411,
+    "ann_id": 5666,
+    "file_name": "563c45745e1775a74e3a5b2513079b9d.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 3,
+    "detected": true,
+    "box_iou": 0.9666277170181274,
+    "mask_iou": 0.9168356997971603,
+    "mask_dice": 0.9566137566137566,
+    "pred_confidence": 0.7329068183898926,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      252.0,
+      886.0,
+      61.0,
+      98.0
+    ],
+    "pred_bbox_xyxy": [
+      252.91065979003906,
+      886.4312744140625,
+      313.74713134765625,
+      984.2359619140625
+    ]
+  },
+  {
+    "index": 13,
+    "image_id": 20250,
+    "ann_id": 4776,
+    "file_name": "cfe1c4de7beeb5eef7cdc05e8be73d57.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9743366837501526,
+    "mask_iou": 0.8778106508875739,
+    "mask_dice": 0.9349298881361273,
+    "pred_confidence": 0.6057387590408325,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      245.0,
+      804.0,
+      79.0,
+      86.0
+    ],
+    "pred_bbox_xyxy": [
+      244.88189697265625,
+      804.5064697265625,
+      325.05096435546875,
+      889.5252685546875
+    ]
+  },
+  {
+    "index": 14,
+    "image_id": 17329,
+    "ann_id": 1931,
+    "file_name": "bba3aec79e766cc1375de76bbe6493bb.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9204996824264526,
+    "mask_iou": 0.9512264017701615,
+    "mask_dice": 0.975003619167109,
+    "pred_confidence": 0.9043325781822205,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      527.0,
+      225.0,
+      137.0,
+      321.0
+    ],
+    "pred_bbox_xyxy": [
+      527.1039428710938,
+      248.35231018066406,
+      664.1498413085938,
+      547.782958984375
+    ]
+  },
+  {
+    "index": 15,
+    "image_id": 20180,
+    "ann_id": 4694,
+    "file_name": "c650f80f25497fb2b0f1231d1e487878.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9883695244789124,
+    "mask_iou": 0.9179017818122791,
+    "mask_dice": 0.9571937317300243,
+    "pred_confidence": 0.5988270044326782,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      266.0,
+      162.0,
+      305.0,
+      461.0
+    ],
+    "pred_bbox_xyxy": [
+      264.1232604980469,
+      161.93223571777344,
+      572.30029296875,
+      622.446533203125
+    ]
+  },
+  {
+    "index": 16,
+    "image_id": 15949,
+    "ann_id": 844,
+    "file_name": "85aa83033214755fefff61b7615c7a48.jpg",
+    "category": "ruffle",
+    "prompt": "ruffle.",
+    "num_detections": 1,
+    "detected": false,
+    "box_iou": 0.0,
+    "mask_iou": 0.0,
+    "mask_dice": 0.0,
+    "pred_confidence": 0.5139747262001038,
+    "pred_phrase": "ruffle",
+    "gt_bbox_xywh": [
+      249.0,
+      461.0,
+      416.0,
+      395.0
+    ],
+    "pred_bbox_xyxy": [
+      103.39390563964844,
+      850.3175048828125,
+      231.9440155029297,
+      1001.74658203125
+    ]
+  },
+  {
+    "index": 17,
+    "image_id": 16010,
+    "ann_id": 907,
+    "file_name": "50e763ae42f2872db7567e607005d3b1.jpg",
+    "category": "sleeve",
+    "prompt": "sleeve.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.46841415762901306,
+    "mask_iou": 0.4533824083723199,
+    "mask_dice": 0.6238996781034035,
+    "pred_confidence": 0.40131303668022156,
+    "pred_phrase": "sleeve",
+    "gt_bbox_xywh": [
+      446.0,
+      229.0,
+      119.0,
+      234.0
+    ],
+    "pred_bbox_xyxy": [
+      333.3204650878906,
+      212.48715209960938,
+      562.7623901367188,
+      460.5999450683594
+    ]
+  },
+  {
+    "index": 18,
+    "image_id": 9465,
+    "ann_id": 5689,
+    "file_name": "3af3a8c1e0581011f46326d3b837a53d.jpg",
+    "category": "top, t-shirt, sweatshirt",
+    "prompt": "top.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.1263854205608368,
+    "mask_iou": 0.11994666198228986,
+    "mask_dice": 0.21420066875325286,
+    "pred_confidence": 0.40096399188041687,
+    "pred_phrase": "top",
+    "gt_bbox_xywh": [
+      223.0,
+      260.0,
+      151.0,
+      177.0
+    ],
+    "pred_bbox_xyxy": [
+      170.04141235351562,
+      107.84027099609375,
+      412.3786926269531,
+      980.4760131835938
+    ]
+  },
+  {
+    "index": 19,
+    "image_id": 14700,
+    "ann_id": 778,
+    "file_name": "e712b9ad744015f1208a2b6eee27afcf.jpg",
+    "category": "sleeve",
+    "prompt": "sleeve.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.8727835416793823,
+    "mask_iou": 0.7766330105089635,
+    "mask_dice": 0.8742751101832521,
+    "pred_confidence": 0.5275014042854309,
+    "pred_phrase": "sleeve",
+    "gt_bbox_xywh": [
+      341.0,
+      372.0,
+      66.0,
+      114.0
+    ],
+    "pred_bbox_xyxy": [
+      340.7403869628906,
+      364.8463134765625,
+      410.5284729003906,
+      488.373046875
+    ]
+  },
+  {
+    "index": 20,
+    "image_id": 11765,
+    "ann_id": 7720,
+    "file_name": "dcbdac96042c96e1fcd4f5e344c3ea43.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9850347638130188,
+    "mask_iou": 0.942058797224955,
+    "mask_dice": 0.9701650625316606,
+    "pred_confidence": 0.7308352589607239,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      201.0,
+      216.0,
+      265.0,
+      643.0
+    ],
+    "pred_bbox_xyxy": [
+      202.6688995361328,
+      215.40890502929688,
+      464.77813720703125,
+      861.086181640625
+    ]
+  },
+  {
+    "index": 21,
+    "image_id": 15860,
+    "ann_id": 691,
+    "file_name": "4dfb4420e88d33d4d1fe455ad77d7901.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9120676517486572,
+    "mask_iou": 0.7033773861967695,
+    "mask_dice": 0.8258620689655173,
+    "pred_confidence": 0.6706330180168152,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      251.0,
+      749.0,
+      35.0,
+      71.0
+    ],
+    "pred_bbox_xyxy": [
+      249.18588256835938,
+      746.7811889648438,
+      285.8091125488281,
+      820.4002075195312
+    ]
+  },
+  {
+    "index": 22,
+    "image_id": 14811,
+    "ann_id": 789,
+    "file_name": "53299262e048171c51fb3673c5b85a08.jpg",
+    "category": "glasses",
+    "prompt": "glasses.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9130865931510925,
+    "mask_iou": 0.8345127925966249,
+    "mask_dice": 0.9097922848664688,
+    "pred_confidence": 0.8534796237945557,
+    "pred_phrase": "glasses",
+    "gt_bbox_xywh": [
+      286.0,
+      88.0,
+      74.0,
+      33.0
+    ],
+    "pred_bbox_xyxy": [
+      285.67181396484375,
+      89.07070922851562,
+      360.45843505859375,
+      122.61198425292969
+    ]
+  },
+  {
+    "index": 23,
+    "image_id": 15279,
+    "ann_id": 205,
+    "file_name": "3fcfa9cf841c43da1cf40ff998939b21.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9687095880508423,
+    "mask_iou": 0.9546101509345429,
+    "mask_dice": 0.9767780551821266,
+    "pred_confidence": 0.8984112739562988,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      279.0,
+      319.0,
+      216.0,
+      513.0
+    ],
+    "pred_bbox_xyxy": [
+      278.17559814453125,
+      328.2860107421875,
+      496.30419921875,
+      834.0008544921875
+    ]
+  },
+  {
+    "index": 24,
+    "image_id": 19795,
+    "ann_id": 4332,
+    "file_name": "e5b237935c0a652dc6585eea57e61dc8.jpg",
+    "category": "coat",
+    "prompt": "coat.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.969769299030304,
+    "mask_iou": 0.9456519090665432,
+    "mask_dice": 0.9720668991816058,
+    "pred_confidence": 0.8066111207008362,
+    "pred_phrase": "coat",
+    "gt_bbox_xywh": [
+      250.0,
+      192.0,
+      230.0,
+      496.0
+    ],
+    "pred_bbox_xyxy": [
+      249.51779174804688,
+      197.67794799804688,
+      482.7384948730469,
+      690.7030029296875
+    ]
+  },
+  {
+    "index": 25,
+    "image_id": 17856,
+    "ann_id": 2368,
+    "file_name": "0229bef01efc25f915374d55f59cbfdd.jpg",
+    "category": "neckline",
+    "prompt": "neckline.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.26036733388900757,
+    "mask_iou": 0.01341197382241254,
+    "mask_dice": 0.026468946822929124,
+    "pred_confidence": 0.4706604778766632,
+    "pred_phrase": "neckline",
+    "gt_bbox_xywh": [
+      641.0,
+      418.0,
+      158.0,
+      57.0
+    ],
+    "pred_bbox_xyxy": [
+      640.7257690429688,
+      347.82122802734375,
+      774.1914672851562,
+      453.93438720703125
+    ]
+  },
+  {
+    "index": 26,
+    "image_id": 15924,
+    "ann_id": 1615,
+    "file_name": "872fc33127ea1bff445f180e91ea979f.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9805622100830078,
+    "mask_iou": 0.9531603599810536,
+    "mask_dice": 0.9760185384781203,
+    "pred_confidence": 0.6489661335945129,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      428.0,
+      317.0,
+      325.0,
+      275.0
+    ],
+    "pred_bbox_xyxy": [
+      428.2755126953125,
+      318.9659729003906,
+      755.91015625,
+      591.2420654296875
+    ]
+  },
+  {
+    "index": 27,
+    "image_id": 17449,
+    "ann_id": 2028,
+    "file_name": "3641da2171647a07f88dae8d53c9a6a3.jpg",
+    "category": "belt",
+    "prompt": "belt.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.7860037684440613,
+    "mask_iou": 0.7525575447570333,
+    "mask_dice": 0.8588106530463334,
+    "pred_confidence": 0.6859768629074097,
+    "pred_phrase": "belt",
+    "gt_bbox_xywh": [
+      305.0,
+      322.0,
+      113.0,
+      41.0
+    ],
+    "pred_bbox_xyxy": [
+      301.66876220703125,
+      328.5606994628906,
+      417.7569580078125,
+      364.6607971191406
+    ]
+  },
+  {
+    "index": 28,
+    "image_id": 10732,
+    "ann_id": 6804,
+    "file_name": "2cf13e48204a0e45bb0a58cf05b53c06.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.8312048316001892,
+    "mask_iou": 0.8423676012461059,
+    "mask_dice": 0.9144403111261413,
+    "pred_confidence": 0.6736234426498413,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      313.0,
+      873.0,
+      33.0,
+      50.0
+    ],
+    "pred_bbox_xyxy": [
+      315.0498962402344,
+      871.5653686523438,
+      348.5664367675781,
+      924.0548706054688
+    ]
+  },
+  {
+    "index": 29,
+    "image_id": 12785,
+    "ann_id": 8556,
+    "file_name": "c04e7cf82a3d0216dabe151f5fc05c24.jpg",
+    "category": "pants",
+    "prompt": "pants.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.985295295715332,
+    "mask_iou": 0.9487474912658886,
+    "mask_dice": 0.9736997692293021,
+    "pred_confidence": 0.6202492117881775,
+    "pred_phrase": "pants",
+    "gt_bbox_xywh": [
+      235.0,
+      604.0,
+      146.0,
+      284.0
+    ],
+    "pred_bbox_xyxy": [
+      234.2241668701172,
+      603.1640625,
+      381.8233642578125,
+      887.718505859375
+    ]
+  },
+  {
+    "index": 30,
+    "image_id": 14432,
+    "ann_id": 752,
+    "file_name": "0ebe6d8449aed07be683fd778a4092d1.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9726001620292664,
+    "mask_iou": 0.9641398735244061,
+    "mask_dice": 0.9817425800682681,
+    "pred_confidence": 0.8978405594825745,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      121.0,
+      380.0,
+      446.0,
+      625.0
+    ],
+    "pred_bbox_xyxy": [
+      118.60629272460938,
+      371.3584899902344,
+      569.2191162109375,
+      1007.3875732421875
+    ]
+  },
+  {
+    "index": 31,
+    "image_id": 15225,
+    "ann_id": 136,
+    "file_name": "0544acba02e8776a56fde74f83633c21.jpg",
+    "category": "shorts",
+    "prompt": "shorts.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.8964400887489319,
+    "mask_iou": 0.8640776699029126,
+    "mask_dice": 0.9270833333333334,
+    "pred_confidence": 0.49251776933670044,
+    "pred_phrase": "shorts",
+    "gt_bbox_xywh": [
+      332.0,
+      353.0,
+      85.0,
+      37.0
+    ],
+    "pred_bbox_xyxy": [
+      333.3052673339844,
+      355.1029357910156,
+      417.3279113769531,
+      391.2099914550781
+    ]
+  },
+  {
+    "index": 32,
+    "image_id": 18204,
+    "ann_id": 2645,
+    "file_name": "c0a478558194a03c19b1ac9d61d5777c.jpg",
+    "category": "shorts",
+    "prompt": "shorts.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9796279668807983,
+    "mask_iou": 0.9210385199749754,
+    "mask_dice": 0.9588964618855986,
+    "pred_confidence": 0.7344914674758911,
+    "pred_phrase": "shorts",
+    "gt_bbox_xywh": [
+      238.0,
+      715.0,
+      337.0,
+      123.0
+    ],
+    "pred_bbox_xyxy": [
+      241.523681640625,
+      715.458984375,
+      576.19775390625,
+      838.3482666015625
+    ]
+  },
+  {
+    "index": 33,
+    "image_id": 18319,
+    "ann_id": 2716,
+    "file_name": "176c976ed8edcf21eebef9de662adc18.jpg",
+    "category": "neckline",
+    "prompt": "neckline.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.6520172953605652,
+    "mask_iou": 0.02851375220792329,
+    "mask_dice": 0.05544651619234544,
+    "pred_confidence": 0.3594774305820465,
+    "pred_phrase": "neckline",
+    "gt_bbox_xywh": [
+      281.0,
+      272.0,
+      135.0,
+      64.0
+    ],
+    "pred_bbox_xyxy": [
+      286.16754150390625,
+      283.82513427734375,
+      403.3155517578125,
+      331.91326904296875
+    ]
+  },
+  {
+    "index": 34,
+    "image_id": 17848,
+    "ann_id": 2355,
+    "file_name": "4cea97e3bd3c0e426073cf4fe482b9ad.jpg",
+    "category": "neckline",
+    "prompt": "neckline.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.5045384168624878,
+    "mask_iou": 0.03543111992071358,
+    "mask_dice": 0.06843742522134481,
+    "pred_confidence": 0.44117704033851624,
+    "pred_phrase": "neckline",
+    "gt_bbox_xywh": [
+      256.0,
+      193.0,
+      71.0,
+      50.0
+    ],
+    "pred_bbox_xyxy": [
+      215.00489807128906,
+      184.71011352539062,
+      322.748291015625,
+      241.66537475585938
+    ]
+  },
+  {
+    "index": 35,
+    "image_id": 11393,
+    "ann_id": 7453,
+    "file_name": "858f141535ac0b2aeef9278577da78b6.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 8,
+    "detected": true,
+    "box_iou": 0.840214729309082,
+    "mask_iou": 0.7759009009009009,
+    "mask_dice": 0.8738110336081166,
+    "pred_confidence": 0.4853591024875641,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      339.0,
+      699.0,
+      25.0,
+      38.0
+    ],
+    "pred_bbox_xyxy": [
+      341.2192687988281,
+      700.4395141601562,
+      365.0453186035156,
+      737.1278686523438
+    ]
+  },
+  {
+    "index": 36,
+    "image_id": 18044,
+    "ann_id": 2532,
+    "file_name": "1b94b1ccf1076bf96d656a870f559d0e.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9873782992362976,
+    "mask_iou": 0.9701149969239506,
+    "mask_dice": 0.9848308331631856,
+    "pred_confidence": 0.6070660948753357,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      211.0,
+      192.0,
+      257.0,
+      404.0
+    ],
+    "pred_bbox_xyxy": [
+      211.93814086914062,
+      190.5828857421875,
+      468.8819885253906,
+      596.86767578125
+    ]
+  },
+  {
+    "index": 37,
+    "image_id": 9703,
+    "ann_id": 5976,
+    "file_name": "a6f3960744c8db184ecb0f6112b7988e.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.8949571251869202,
+    "mask_iou": 0.958642194808392,
+    "mask_dice": 0.9788844510236573,
+    "pred_confidence": 0.5942641496658325,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      333.0,
+      214.0,
+      174.0,
+      373.0
+    ],
+    "pred_bbox_xyxy": [
+      347.1854248046875,
+      213.84768676757812,
+      510.38568115234375,
+      589.559814453125
+    ]
+  },
+  {
+    "index": 38,
+    "image_id": 11614,
+    "ann_id": 7618,
+    "file_name": "dbbc57a65ecd459890dfd87b72288f70.jpg",
+    "category": "top, t-shirt, sweatshirt",
+    "prompt": "top.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9753477573394775,
+    "mask_iou": 0.9487509593721374,
+    "mask_dice": 0.973701595690619,
+    "pred_confidence": 0.3873652219772339,
+    "pred_phrase": "top",
+    "gt_bbox_xywh": [
+      203.0,
+      186.0,
+      243.0,
+      238.0
+    ],
+    "pred_bbox_xyxy": [
+      204.4335479736328,
+      186.43255615234375,
+      446.31695556640625,
+      427.8428955078125
+    ]
+  },
+  {
+    "index": 39,
+    "image_id": 11931,
+    "ann_id": 7844,
+    "file_name": "31376f97ef5d1d083e6f1092d5d33b7b.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 6,
+    "detected": true,
+    "box_iou": 0.6054131388664246,
+    "mask_iou": 0.7741745283018868,
+    "mask_dice": 0.8727151877700232,
+    "pred_confidence": 0.5519188046455383,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      342.0,
+      725.0,
+      50.0,
+      59.0
+    ],
+    "pred_bbox_xyxy": [
+      350.3780517578125,
+      740.1559448242188,
+      391.36163330078125,
+      784.4400024414062
+    ]
+  },
+  {
+    "index": 40,
+    "image_id": 12215,
+    "ann_id": 8100,
+    "file_name": "9a886a145d0a9f81b15e79666a5c51b1.jpg",
+    "category": "bag, wallet",
+    "prompt": "bag.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9855659604072571,
+    "mask_iou": 0.9389306634539487,
+    "mask_dice": 0.9685035995886184,
+    "pred_confidence": 0.7167724967002869,
+    "pred_phrase": "bag",
+    "gt_bbox_xywh": [
+      465.0,
+      843.0,
+      195.0,
+      179.0
+    ],
+    "pred_bbox_xyxy": [
+      464.527587890625,
+      844.1182250976562,
+      659.78515625,
+      1022.8560180664062
+    ]
+  },
+  {
+    "index": 41,
+    "image_id": 17515,
+    "ann_id": 2061,
+    "file_name": "ada83e10834aa11414790cb9b9955aea.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9671075940132141,
+    "mask_iou": 0.9443639342196459,
+    "mask_dice": 0.9713859813992677,
+    "pred_confidence": 0.8791449069976807,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      302.0,
+      207.0,
+      250.0,
+      514.0
+    ],
+    "pred_bbox_xyxy": [
+      304.1104736328125,
+      210.955322265625,
+      554.5272216796875,
+      724.7774047851562
+    ]
+  },
+  {
+    "index": 42,
+    "image_id": 12942,
+    "ann_id": 8705,
+    "file_name": "7f9007ed8484e01e26dee5e2e7a633bf.jpg",
+    "category": "neckline",
+    "prompt": "neckline.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.1909845918416977,
+    "mask_iou": 0.04275092936802974,
+    "mask_dice": 0.08199643493761141,
+    "pred_confidence": 0.35086339712142944,
+    "pred_phrase": "neckline",
+    "gt_bbox_xywh": [
+      485.0,
+      286.0,
+      36.0,
+      9.0
+    ],
+    "pred_bbox_xyxy": [
+      493.8553466796875,
+      270.02166748046875,
+      518.2423706054688,
+      291.5889892578125
+    ]
+  },
+  {
+    "index": 43,
+    "image_id": 19292,
+    "ann_id": 3811,
+    "file_name": "733c7993cb2b7f5abd3fe0ec9988137f.jpg",
+    "category": "sleeve",
+    "prompt": "sleeve.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9448469877243042,
+    "mask_iou": 0.8923334190892719,
+    "mask_dice": 0.9431037998776426,
+    "pred_confidence": 0.4061127305030823,
+    "pred_phrase": "sleeve",
+    "gt_bbox_xywh": [
+      176.0,
+      290.0,
+      91.0,
+      111.0
+    ],
+    "pred_bbox_xyxy": [
+      175.38572692871094,
+      287.1669921875,
+      266.5887451171875,
+      403.35455322265625
+    ]
+  },
+  {
+    "index": 44,
+    "image_id": 15891,
+    "ann_id": 730,
+    "file_name": "69b505aa605512169cdbf485fc8b9718.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9721506834030151,
+    "mask_iou": 0.9291994683570187,
+    "mask_dice": 0.9633005644028724,
+    "pred_confidence": 0.8431887030601501,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      421.0,
+      278.0,
+      179.0,
+      352.0
+    ],
+    "pred_bbox_xyxy": [
+      422.5675964355469,
+      275.98931884765625,
+      599.2460327148438,
+      633.44775390625
+    ]
+  },
+  {
+    "index": 45,
+    "image_id": 15729,
+    "ann_id": 581,
+    "file_name": "3a87ce99efb87686869fdb390cc5ef0c.jpg",
+    "category": "top, t-shirt, sweatshirt",
+    "prompt": "top.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.25625109672546387,
+    "mask_iou": 0.2543295650475212,
+    "mask_dice": 0.4055227144994955,
+    "pred_confidence": 0.41120144724845886,
+    "pred_phrase": "top",
+    "gt_bbox_xywh": [
+      508.0,
+      290.0,
+      220.0,
+      245.0
+    ],
+    "pred_bbox_xyxy": [
+      476.924560546875,
+      145.31289672851562,
+      737.068115234375,
+      953.86865234375
+    ]
+  },
+  {
+    "index": 46,
+    "image_id": 10904,
+    "ann_id": 6983,
+    "file_name": "c20cd495aea72107c49299e4f957ef2b.jpg",
+    "category": "pants",
+    "prompt": "pants.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9696459174156189,
+    "mask_iou": 0.9357483263360944,
+    "mask_dice": 0.966807837160568,
+    "pred_confidence": 0.7380453944206238,
+    "pred_phrase": "pants",
+    "gt_bbox_xywh": [
+      501.0,
+      534.0,
+      190.0,
+      295.0
+    ],
+    "pred_bbox_xyxy": [
+      501.84716796875,
+      537.9912109375,
+      692.8673095703125,
+      829.91552734375
+    ]
+  },
+  {
+    "index": 47,
+    "image_id": 18908,
+    "ann_id": 3427,
+    "file_name": "3a251a0d83018173d9eb85dd2f7c64f1.jpg",
+    "category": "shoe",
+    "prompt": "shoe.",
+    "num_detections": 2,
+    "detected": true,
+    "box_iou": 0.9486379623413086,
+    "mask_iou": 0.9210744486818107,
+    "mask_dice": 0.9589159330226135,
+    "pred_confidence": 0.8603624701499939,
+    "pred_phrase": "shoe",
+    "gt_bbox_xywh": [
+      526.0,
+      561.0,
+      84.0,
+      116.0
+    ],
+    "pred_bbox_xyxy": [
+      524.9035034179688,
+      564.9092407226562,
+      609.6449584960938,
+      677.1953735351562
+    ]
+  },
+  {
+    "index": 48,
+    "image_id": 9656,
+    "ann_id": 5899,
+    "file_name": "420f153001eb2e37269ae974b9f7665e.jpg",
+    "category": "ruffle",
+    "prompt": "ruffle.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.3569392263889313,
+    "mask_iou": 0.3331872562338402,
+    "mask_dice": 0.4998356452567221,
+    "pred_confidence": 0.3564367890357971,
+    "pred_phrase": "ruffle",
+    "gt_bbox_xywh": [
+      200.0,
+      507.0,
+      257.0,
+      198.0
+    ],
+    "pred_bbox_xyxy": [
+      201.09378051757812,
+      156.193603515625,
+      456.8397521972656,
+      703.237060546875
+    ]
+  },
+  {
+    "index": 49,
+    "image_id": 17108,
+    "ann_id": 2978,
+    "file_name": "63428001d1dead4d5afcbabfc9777c67.jpg",
+    "category": "dress",
+    "prompt": "dress.",
+    "num_detections": 1,
+    "detected": true,
+    "box_iou": 0.9860490560531616,
+    "mask_iou": 0.9651778874797855,
+    "mask_dice": 0.9822804272620472,
+    "pred_confidence": 0.9071410298347473,
+    "pred_phrase": "dress",
+    "gt_bbox_xywh": [
+      156.0,
+      243.0,
+      327.0,
+      537.0
+    ],
+    "pred_bbox_xyxy": [
+      156.9396514892578,
+      237.43478393554688,
+      483.10382080078125,
+      779.6920166015625
+    ]
+  }
+]

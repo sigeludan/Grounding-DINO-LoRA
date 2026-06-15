@@ -1,0 +1,23 @@
+{
+  "ann_file": "/root/autodl-tmp/fashionpedia/annotations/instances_attributes_val2020.json",
+  "img_dir": "/root/autodl-tmp/fashionpedia/images/test",
+  "subset_size": 200,
+  "seed": 42,
+  "prompt_strategy": "synonyms",
+  "device": "cuda",
+  "box_thresholds": [
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "text_thresholds": [
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "output_dir": "/root/autodl-tmp/Grounded-SAM-2/outputs/threshold_sweep_20260615_102629"
+}

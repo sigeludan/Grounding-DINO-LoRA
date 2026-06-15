@@ -1,0 +1,242 @@
+[
+  {
+    "box_threshold": 0.15,
+    "text_threshold": 0.15,
+    "num_instances": 200,
+    "detection_rate": 0.965,
+    "mean_box_iou": 0.8555154460668564,
+    "mean_mask_iou": 0.763083677203135,
+    "mean_mask_dice": 0.8254794361317136,
+    "mask_iou@0.5": 0.845
+  },
+  {
+    "box_threshold": 0.15,
+    "text_threshold": 0.2,
+    "num_instances": 200,
+    "detection_rate": 0.965,
+    "mean_box_iou": 0.8555154460668564,
+    "mean_mask_iou": 0.763083677203135,
+    "mean_mask_dice": 0.8254794361317136,
+    "mask_iou@0.5": 0.845
+  },
+  {
+    "box_threshold": 0.15,
+    "text_threshold": 0.25,
+    "num_instances": 200,
+    "detection_rate": 0.965,
+    "mean_box_iou": 0.8555154460668564,
+    "mean_mask_iou": 0.763083677203135,
+    "mean_mask_dice": 0.8254794361317136,
+    "mask_iou@0.5": 0.845
+  },
+  {
+    "box_threshold": 0.15,
+    "text_threshold": 0.3,
+    "num_instances": 200,
+    "detection_rate": 0.965,
+    "mean_box_iou": 0.8555154460668564,
+    "mean_mask_iou": 0.763083677203135,
+    "mean_mask_dice": 0.8254794361317136,
+    "mask_iou@0.5": 0.845
+  },
+  {
+    "box_threshold": 0.2,
+    "text_threshold": 0.15,
+    "num_instances": 200,
+    "detection_rate": 0.95,
+    "mean_box_iou": 0.8340917304903269,
+    "mean_mask_iou": 0.7525808089953477,
+    "mean_mask_dice": 0.8126540935884482,
+    "mask_iou@0.5": 0.84
+  },
+  {
+    "box_threshold": 0.2,
+    "text_threshold": 0.2,
+    "num_instances": 200,
+    "detection_rate": 0.95,
+    "mean_box_iou": 0.8340917304903269,
+    "mean_mask_iou": 0.7525808089953477,
+    "mean_mask_dice": 0.8126540935884482,
+    "mask_iou@0.5": 0.84
+  },
+  {
+    "box_threshold": 0.2,
+    "text_threshold": 0.25,
+    "num_instances": 200,
+    "detection_rate": 0.95,
+    "mean_box_iou": 0.8340917304903269,
+    "mean_mask_iou": 0.7525808089953477,
+    "mean_mask_dice": 0.8126540935884482,
+    "mask_iou@0.5": 0.84
+  },
+  {
+    "box_threshold": 0.2,
+    "text_threshold": 0.3,
+    "num_instances": 200,
+    "detection_rate": 0.95,
+    "mean_box_iou": 0.8340917304903269,
+    "mean_mask_iou": 0.7525808089953477,
+    "mean_mask_dice": 0.8126540935884482,
+    "mask_iou@0.5": 0.84
+  },
+  {
+    "box_threshold": 0.25,
+    "text_threshold": 0.15,
+    "num_instances": 200,
+    "detection_rate": 0.915,
+    "mean_box_iou": 0.7974542004615068,
+    "mean_mask_iou": 0.7200385431566861,
+    "mean_mask_dice": 0.774992612562912,
+    "mask_iou@0.5": 0.8
+  },
+  {
+    "box_threshold": 0.25,
+    "text_threshold": 0.2,
+    "num_instances": 200,
+    "detection_rate": 0.915,
+    "mean_box_iou": 0.7974542004615068,
+    "mean_mask_iou": 0.7200385431566861,
+    "mean_mask_dice": 0.774992612562912,
+    "mask_iou@0.5": 0.8
+  },
+  {
+    "box_threshold": 0.25,
+    "text_threshold": 0.25,
+    "num_instances": 200,
+    "detection_rate": 0.915,
+    "mean_box_iou": 0.7974542004615068,
+    "mean_mask_iou": 0.7200385431566861,
+    "mean_mask_dice": 0.774992612562912,
+    "mask_iou@0.5": 0.8
+  },
+  {
+    "box_threshold": 0.25,
+    "text_threshold": 0.3,
+    "num_instances": 200,
+    "detection_rate": 0.915,
+    "mean_box_iou": 0.7974542004615068,
+    "mean_mask_iou": 0.7200385431566861,
+    "mean_mask_dice": 0.774992612562912,
+    "mask_iou@0.5": 0.8
+  },
+  {
+    "box_threshold": 0.3,
+    "text_threshold": 0.15,
+    "num_instances": 200,
+    "detection_rate": 0.8,
+    "mean_box_iou": 0.6972182937897742,
+    "mean_mask_iou": 0.6365195412606829,
+    "mean_mask_dice": 0.6802143908805472,
+    "mask_iou@0.5": 0.7
+  },
+  {
+    "box_threshold": 0.3,
+    "text_threshold": 0.2,
+    "num_instances": 200,
+    "detection_rate": 0.8,
+    "mean_box_iou": 0.6972182937897742,
+    "mean_mask_iou": 0.6365195412606829,
+    "mean_mask_dice": 0.6802143908805472,
+    "mask_iou@0.5": 0.7
+  },
+  {
+    "box_threshold": 0.3,
+    "text_threshold": 0.25,
+    "num_instances": 200,
+    "detection_rate": 0.8,
+    "mean_box_iou": 0.6972182937897742,
+    "mean_mask_iou": 0.6365195412606829,
+    "mean_mask_dice": 0.6802143908805472,
+    "mask_iou@0.5": 0.7
+  },
+  {
+    "box_threshold": 0.3,
+    "text_threshold": 0.3,
+    "num_instances": 200,
+    "detection_rate": 0.8,
+    "mean_box_iou": 0.6972182937897742,
+    "mean_mask_iou": 0.6365195412606829,
+    "mean_mask_dice": 0.6802143908805472,
+    "mask_iou@0.5": 0.7
+  },
+  {
+    "box_threshold": 0.35,
+    "text_threshold": 0.15,
+    "num_instances": 200,
+    "detection_rate": 0.605,
+    "mean_box_iou": 0.5330093425698579,
+    "mean_mask_iou": 0.5011613543661713,
+    "mean_mask_dice": 0.5299745316973273,
+    "mask_iou@0.5": 0.55
+  },
+  {
+    "box_threshold": 0.35,
+    "text_threshold": 0.2,
+    "num_instances": 200,
+    "detection_rate": 0.605,
+    "mean_box_iou": 0.5330093425698579,
+    "mean_mask_iou": 0.5011613543661713,
+    "mean_mask_dice": 0.5299745316973273,
+    "mask_iou@0.5": 0.55
+  },
+  {
+    "box_threshold": 0.35,
+    "text_threshold": 0.25,
+    "num_instances": 200,
+    "detection_rate": 0.605,
+    "mean_box_iou": 0.5330093425698579,
+    "mean_mask_iou": 0.5011613543661713,
+    "mean_mask_dice": 0.5299745316973273,
+    "mask_iou@0.5": 0.55
+  },
+  {
+    "box_threshold": 0.35,
+    "text_threshold": 0.3,
+    "num_instances": 200,
+    "detection_rate": 0.605,
+    "mean_box_iou": 0.5330093425698579,
+    "mean_mask_iou": 0.5011613543661713,
+    "mean_mask_dice": 0.5299745316973273,
+    "mask_iou@0.5": 0.55
+  },
+  {
+    "box_threshold": 0.4,
+    "text_threshold": 0.15,
+    "num_instances": 200,
+    "detection_rate": 0.49,
+    "mean_box_iou": 0.44629593381658195,
+    "mean_mask_iou": 0.42310227638184783,
+    "mean_mask_dice": 0.4450303244427648,
+    "mask_iou@0.5": 0.46
+  },
+  {
+    "box_threshold": 0.4,
+    "text_threshold": 0.2,
+    "num_instances": 200,
+    "detection_rate": 0.49,
+    "mean_box_iou": 0.44629593381658195,
+    "mean_mask_iou": 0.42310227638184783,
+    "mean_mask_dice": 0.4450303244427648,
+    "mask_iou@0.5": 0.46
+  },
+  {
+    "box_threshold": 0.4,
+    "text_threshold": 0.25,
+    "num_instances": 200,
+    "detection_rate": 0.49,
+    "mean_box_iou": 0.44629593381658195,
+    "mean_mask_iou": 0.42310227638184783,
+    "mean_mask_dice": 0.4450303244427648,
+    "mask_iou@0.5": 0.46
+  },
+  {
+    "box_threshold": 0.4,
+    "text_threshold": 0.3,
+    "num_instances": 200,
+    "detection_rate": 0.49,
+    "mean_box_iou": 0.44629593381658195,
+    "mean_mask_iou": 0.42310227638184783,
+    "mean_mask_dice": 0.4450303244427648,
+    "mask_iou@0.5": 0.46
+  }
+]

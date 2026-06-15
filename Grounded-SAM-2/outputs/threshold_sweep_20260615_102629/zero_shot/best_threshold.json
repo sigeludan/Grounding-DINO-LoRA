@@ -1,0 +1,9 @@
+{
+  "model": "zero_shot",
+  "checkpoint": "/root/autodl-tmp/Grounded-SAM-2/gdino_checkpoints/groundingdino_swint_ogc.pth",
+  "best_box_threshold": 0.15,
+  "best_text_threshold": 0.15,
+  "best_mean_mask_iou": 0.7548317598491617,
+  "best_detection_rate": 0.995,
+  "best_mean_box_iou": 0.8291367368842657
+}

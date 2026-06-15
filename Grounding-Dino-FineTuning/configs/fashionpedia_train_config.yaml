@@ -1,0 +1,25 @@
+# Fashionpedia LoRA fine-tuning (SwinT, matches Grounded-SAM-2 weights)
+data:
+  train_dir: "/root/autodl-tmp/fashionpedia/images/train"
+  train_ann: "/root/autodl-tmp/fashionpedia/gdino_csv/train_annotations.csv"
+  val_dir: "/root/autodl-tmp/fashionpedia/images/test"
+  val_ann: "/root/autodl-tmp/fashionpedia/gdino_csv/val_annotations.csv"
+  batch_size: 16
+  num_workers: 12
+  negative_sampling_rate: 0
+
+model:
+  config_path: "groundingdino/config/GroundingDINO_SwinT_OGC.py"
+  weights_path: "weights/groundingdino_swint_ogc.pth"
+
+training:
+  num_epochs: 5
+  learning_rate: 1.0e-4
+  save_dir: "weights/fashionpedia_lora"
+  save_frequency: 1
+  warmup_epochs: 1
+  use_lora: true
+  use_bf16: true
+  visualization_frequency: 5
+  use_gradient_clipping: true
+  max_grad_norm: 5.0

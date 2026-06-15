@@ -1,0 +1,88 @@
+# =============================================================================
+# Grounding-DINO Fine-Tuning + Fashionpedia LoRA
+# =============================================================================
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+pip-log.txt
+pip-delete-this-directory.txt
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
+# --- Virtual environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+groundingdino.egg-info/
+develop-eggs/
+eggs/
+.eggs/
+*.egg
+MANIFEST
+wheels/
+pip-wheel-metadata/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Training outputs (LoRA runs, merged weights, val preds) ---
+weights/
+
+# --- Model checkpoints ---
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+
+# --- Training logs ---
+*.log
+train.log
+
+# --- Visualization / debug images ---
+vis_results/
+visualizations/
+vis_Dataset/
+
+# --- Fashionpedia dataset (download separately; do not commit) ---
+fashionpedia/
+**/fashionpedia/
+**/multimodal-data/
+
+# --- Large archives ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# --- Experiment tracking ---
+wandb/
+runs/
+tensorboard/
+lightning_logs/
+mlruns/
+
+# --- Local git helper scripts (machine-specific) ---
+git_commit_push.sh
+gitconfig.sh

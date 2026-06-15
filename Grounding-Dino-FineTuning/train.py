@@ -1,0 +1,422 @@
+import os
+import time
+from collections import defaultdict
+import torch
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+from groundingdino.util.train import load_model
+from groundingdino.util.misc import nested_tensor_from_tensor_list
+from ema_pytorch import EMA
+from typing import Dict, NamedTuple
+from groundingdino.util.model_utils import freeze_model_layers,print_frozen_status
+from torch.optim.lr_scheduler import OneCycleLR
+from groundingdino.util.matchers import build_matcher
+from groundingdino.util.inference import GroundingDINOVisualizer
+from groundingdino.util.model_utils import freeze_model_layers, print_frozen_status
+from groundingdino.util.lora import get_lora_optimizer_params, verify_only_lora_trainable
+from datetime import datetime
+import yaml
+from typing import Dict, Optional, Any
+from groundingdino.datasets.dataset import GroundingDINODataset
+from groundingdino.util.losses import SetCriterion
+from config import ConfigurationManager, DataConfig, ModelConfig
+from peft import get_peft_model_state_dict
+
+# Ignore tokenizer warning
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    
+
+def setup_model(model_config: ModelConfig, use_lora: bool=False) -> torch.nn.Module:
+    return load_model(
+        model_config.config_path,
+        model_config.weights_path,
+        use_lora=use_lora,
+    )
+
+def setup_data_loaders(config: DataConfig) -> tuple[DataLoader, DataLoader]:
+
+    train_dataset = GroundingDINODataset(
+        config.train_dir,
+        config.train_ann,
+        negative_sampling_rate=config.negative_sampling_rate,
+        add_extra_classes=True
+    )
+    
+    val_dataset = GroundingDINODataset(
+        config.val_dir,
+        config.val_ann,
+        negative_sampling_rate=0.0  # No negative sampling for validation
+    )
+
+    train_loader_kwargs = dict(
+        batch_size=config.batch_size,
+        shuffle=True,
+        num_workers=config.num_workers,
+        collate_fn=lambda x: tuple(zip(*x)),
+        pin_memory=True,
+    )
+    if config.num_workers > 0:
+        train_loader_kwargs["persistent_workers"] = True
+        train_loader_kwargs["prefetch_factor"] = 4
+
+    val_loader_kwargs = dict(
+        batch_size=1,
+        shuffle=False,
+        num_workers=min(4, config.num_workers),
+        collate_fn=lambda x: tuple(zip(*x)),
+        pin_memory=True,
+    )
+    if val_loader_kwargs["num_workers"] > 0:
+        val_loader_kwargs["persistent_workers"] = True
+        val_loader_kwargs["prefetch_factor"] = 2
+    
+    train_loader = DataLoader(train_dataset, **train_loader_kwargs)
+    val_loader = DataLoader(val_dataset, **val_loader_kwargs)
+    
+    return train_loader, val_loader
+    
+
+class GroundingDINOTrainer:
+    def __init__(
+        self,
+        model,
+        device="cuda",
+        ema_decay=0.999,
+        ema_update_after_step=150,
+        ema_update_every=20,
+        warmup_epochs=5,
+        class_loss_coef=1.0,
+        bbox_loss_coef=5.0,  
+        giou_loss_coef=1.0,  
+        learning_rate=2e-4,   
+        use_ema=False,      
+        num_epochs=500,
+        num_steps_per_epoch=None,
+        lr_scheduler="onecycle",
+        eos_coef=0.1,
+        max_txt_len=256,
+        use_lora=False,
+        use_bf16=False,
+        use_gradient_clipping=True,
+        max_grad_norm=5.0
+    ):
+        self.model = model.to(device)
+        self.device = device
+        self.use_bf16 = use_bf16 and device == "cuda" and torch.cuda.is_bf16_supported()
+        self.class_loss_coef = class_loss_coef
+        self.bbox_loss_coef = bbox_loss_coef
+        self.giou_loss_coef = giou_loss_coef
+        
+        if use_lora:
+            lora_params=get_lora_optimizer_params(model)
+            self.optimizer = torch.optim.AdamW(
+                lora_params,
+                lr=learning_rate,
+                #weight_decay=1e-4  # Removed for overfitting
+            )
+        else:
+            self.optimizer = torch.optim.AdamW(
+                model.parameters(),
+                lr=learning_rate,
+                weight_decay=1e-4  # Removed for overfitting
+            )
+        
+        # Initialize scheduler with warmup
+        if lr_scheduler=="onecycle":
+            total_steps = num_steps_per_epoch * num_epochs
+            #warmup_steps = num_steps_per_epoch * warmup_epochs  
+            #self.scheduler = get_cosine_schedule_with_warmup(
+            #    self.optimizer,
+            #    num_warmup_steps=warmup_steps,
+            #    num_training_steps=total_steps
+            #)
+            # One Cycle LR with warmup
+            self.scheduler = OneCycleLR(
+                self.optimizer,
+                max_lr=learning_rate,
+                total_steps=total_steps,
+                pct_start=0.1,  # 10% of training for warmup
+                div_factor=25,
+                final_div_factor=1e4,
+                anneal_strategy='cos'
+            )
+        else:
+            # Simple step scheduler
+            total_steps = num_steps_per_epoch * num_epochs
+            self.scheduler = torch.optim.lr_scheduler.StepLR(
+                self.optimizer, 
+                step_size=total_steps//20, 
+                gamma=0.5
+            )
+        
+        # Initialize EMA
+        self.use_ema = use_ema
+        if use_ema:
+            self.ema_model = EMA(
+                model,
+                beta=ema_decay,
+                update_after_step=ema_update_after_step,
+                update_every=ema_update_every
+            )
+
+        self.matcher=build_matcher(set_cost_class=class_loss_coef*2,
+            set_cost_bbox=bbox_loss_coef,
+            set_cost_giou=giou_loss_coef)
+        
+        losses = ['labels', 'boxes']
+        self.weights_dict= {'loss_ce': class_loss_coef, 'loss_bbox': bbox_loss_coef, 'loss_giou': giou_loss_coef}
+        # Give more weightage to bobx loss in loss calculation compared to matcher 
+        self.weights_dict_loss = {'loss_ce': class_loss_coef, 'loss_bbox': bbox_loss_coef*2, 'loss_giou': giou_loss_coef}
+        self.criterion = SetCriterion(max_txt_len, self.matcher, eos_coef, losses)
+        self.criterion.to(device)
+        self.use_gradient_clipping = use_gradient_clipping
+        self.max_grad_norm = max_grad_norm
+
+    def prepare_batch(self, batch):
+        images, targets = batch
+        # Convert list of images to NestedTensor and move to device
+        if isinstance(images, (list, tuple)):
+            images = nested_tensor_from_tensor_list(images)  # Convert list to NestedTensor
+        # NestedTensor.to() only accepts device, not non_blocking.
+        images = images.to(self.device)
+
+        captions=[]
+        for target in targets:
+            target['boxes']=target['boxes'].to(self.device, non_blocking=True)
+            target['size']=target['size'].to(self.device, non_blocking=True)
+            target['labels']=target['labels'].to(self.device, non_blocking=True)
+            # Use caption (already processed string) for the caption
+            captions.append(target['caption'])
+            
+        return images, targets, captions
+
+    def train_step(self, batch):
+        """Single training step"""
+        self.model.train()
+        #self.get_ema_model().train()
+        self.optimizer.zero_grad() 
+        # Prepare batch
+        images, targets, captions = self.prepare_batch(batch)
+        with torch.amp.autocast(
+            "cuda",
+            enabled=self.use_bf16,
+            dtype=torch.bfloat16,
+        ):
+            outputs = self.model(images, captions=captions)
+            loss_dict = self.criterion(
+                outputs, targets, captions=captions, tokenizer=self.model.tokenizer
+            )
+            total_loss = sum(
+                loss_dict[k] * self.weights_dict_loss[k]
+                for k in loss_dict.keys()
+                if k in self.weights_dict_loss
+            )
+        ## backward pass
+        total_loss.backward()
+        loss_dict['total_loss']=total_loss
+        if self.use_gradient_clipping:
+            total_norm = torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=self.max_grad_norm)
+            #print(f"Gradient norm: {total_norm:.4f}")
+        else:
+            total_norm = None
+        self.optimizer.step()
+        
+        # Step scheduler if it exists
+        if self.scheduler is not None:
+            self.scheduler.step()
+        
+        # Update EMA model
+        if self.use_ema:
+            self.ema_model.update()
+        
+        return {k: v.item() if isinstance(v, torch.Tensor) else v 
+                for k, v in loss_dict.items()}
+
+
+    @torch.no_grad()
+    def validate(self, val_loader):
+        self.model.eval()
+        val_losses = defaultdict(float)
+        num_batches = 0
+        
+        for batch in val_loader:
+            images, targets, captions = self.prepare_batch(batch)
+            outputs = self.model(images, captions=captions)
+            
+            # Calculate losses
+            loss_dict = self.criterion(outputs, targets, captions=captions, tokenizer=self.model.tokenizer)
+            
+            # Accumulate losses
+            for k, v in loss_dict.items():
+                val_losses[k] += v.item()
+                
+            val_losses['total_loss'] += sum(loss_dict[k] * self.weights_dict[k] 
+                                        for k in loss_dict.keys() if k in self.weights_dict_loss).item()
+            num_batches += 1
+
+        # Average losses
+        return {k: v/num_batches for k, v in val_losses.items()}
+
+
+    def get_ema_model(self):
+        """Return EMA model for evaluation"""
+        return self.ema_model.ema_model
+
+    def save_checkpoint(self, path, epoch, losses, use_lora=False):
+        """Save checkpoint with EMA and scheduler state""" 
+        if use_lora:
+            lora_state_dict = get_peft_model_state_dict(self.model)
+            checkpoint = {
+            'epoch': epoch,
+            'model': lora_state_dict,
+            'optimizer_state_dict': self.optimizer.state_dict(),
+            'scheduler_state_dict': self.scheduler.state_dict() if self.scheduler else None,
+            'losses': losses,}
+        else:
+            checkpoint = {
+                'epoch': epoch,
+                'model': self.model.state_dict(),
+                'ema_state_dict': self.ema_model.state_dict() if self.use_ema else None,
+                'optimizer_state_dict': self.optimizer.state_dict(),
+                'scheduler_state_dict': self.scheduler.state_dict() if self.scheduler else None,
+                'losses': losses,
+            }
+        torch.save(checkpoint, path)
+
+def train(config_path: str, save_dir: Optional[str] = None) -> None:
+    """
+    Main training function with configuration management
+    
+    Args:
+        config_path: Path to the YAML configuration file
+        save_dir: Optional override for save directory
+    """
+
+    data_config, model_config, training_config = ConfigurationManager.load_config(config_path)
+
+    torch.backends.cuda.matmul.allow_tf32 = True
+    torch.backends.cudnn.allow_tf32 = True
+    torch.backends.cudnn.benchmark = True
+
+    model = setup_model(model_config, training_config.use_lora)
+    
+    if save_dir:
+        training_config.save_dir = save_dir
+    
+    # Setup save directory with timestamp
+    save_dir = os.path.join(
+        training_config.save_dir,
+        datetime.now().strftime("%Y%m%d_%H%M")
+    )
+    os.makedirs(save_dir, exist_ok=True)
+    
+    config_save_path = os.path.join(save_dir, 'config.yaml')
+    with open(config_save_path, 'w') as f:
+        yaml.dump({
+            'data': vars(data_config),
+            'model': vars(model_config),
+            'training': vars(training_config)
+        }, f, default_flow_style=False)
+    
+    train_loader, val_loader = setup_data_loaders(data_config)
+
+    steps_per_epoch = len(train_loader)
+    
+    visualizer = GroundingDINOVisualizer(save_dir=save_dir)
+    
+    if not training_config.use_lora:
+        print("Freezing most of model except few layers!")
+        freeze_model_layers(model)
+    
+    else:
+         print( f"Is only Lora trainable?  {verify_only_lora_trainable(model)} ")
+
+    print_frozen_status(model)
+    use_bf16 = training_config.use_bf16 and torch.cuda.is_bf16_supported()
+    print(
+        f"Speed opts: batch_size={data_config.batch_size}, "
+        f"num_workers={data_config.num_workers}, "
+        f"bf16={use_bf16}, tf32=True, "
+        f"steps/epoch={steps_per_epoch}"
+    )
+
+    trainer = GroundingDINOTrainer(
+        model,
+        num_steps_per_epoch=steps_per_epoch,
+        num_epochs=training_config.num_epochs,
+        warmup_epochs=training_config.warmup_epochs,
+        learning_rate=training_config.learning_rate,
+        use_lora=training_config.use_lora,
+        use_bf16=training_config.use_bf16,
+        use_gradient_clipping=training_config.use_gradient_clipping,
+        max_grad_norm=training_config.max_grad_norm
+    )   
+    log_interval = 100
+    train_start = time.time()
+
+    # Training loop
+    for epoch in range(training_config.num_epochs):
+        if epoch % training_config.visualization_frequency == 0:
+            visualizer.visualize_epoch(model, val_loader, epoch, trainer.prepare_batch,box_th=0.3, txt_th= 0.2)
+        
+        epoch_losses = defaultdict(list)
+        epoch_start = time.time()
+        pbar = tqdm(
+            enumerate(train_loader),
+            total=len(train_loader),
+            desc=f"Epoch {epoch + 1}/{training_config.num_epochs}",
+            unit="batch",
+            ncols=120,
+            dynamic_ncols=True,
+        )
+        for batch_idx, batch in pbar:
+            losses = trainer.train_step(batch)
+            
+            for k, v in losses.items():
+                epoch_losses[k].append(v)
+
+            pbar.set_postfix(
+                total=f"{losses['total_loss']:.3f}",
+                ce=f"{losses.get('loss_ce', 0):.3f}",
+                lr=f"{trainer.optimizer.param_groups[0]['lr']:.1e}",
+            )
+
+            if (batch_idx + 1) % log_interval == 0:
+                elapsed = time.time() - epoch_start
+                loss_str = ", ".join(f"{k}: {v:.4f}" for k, v in losses.items())
+                tqdm.write(
+                    f"[epoch {epoch + 1} {elapsed / 60:.1f}min] "
+                    f"batch {batch_idx + 1}/{len(train_loader)} | {loss_str}"
+                )
+
+        pbar.close()
+        avg_losses = {k: sum(v) / len(v) for k, v in epoch_losses.items()}
+        epoch_elapsed = time.time() - epoch_start
+        total_elapsed = time.time() - train_start
+        loss_str = ", ".join(f"{k}: {v:.4f}" for k, v in avg_losses.items())
+        print(
+            f"Epoch {epoch + 1}/{training_config.num_epochs} done "
+            f"({epoch_elapsed / 60:.1f}min, total {total_elapsed / 60:.1f}min) | {loss_str}"
+        )
+        
+        # Save checkpoint
+        if (epoch + 1) % training_config.save_frequency == 0:
+            trainer.save_checkpoint(
+                os.path.join(save_dir, f'checkpoint_epoch_{epoch+1}.pth'),
+                epoch,
+                avg_losses,
+                use_lora=training_config.use_lora
+            )
+
+            
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--config",
+        default="configs/fashionpedia_train_config.yaml",
+        help="Path to training YAML config",
+    )
+    args = parser.parse_args()
+    train(args.config)

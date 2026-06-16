@@ -131,11 +131,11 @@ LoRA 训练请在 `Grounding-Dino-FineTuning/configs/fashionpedia_train_config.y
 
 ## 结果图表
 
-![Overall mIoU](Grounded-SAM-2\outputs\figures\overall_mask_miou.png)
+![Overall mIoU](Grounded-SAM-2/outputs/figures/overall_mask_miou.png)
 
-![Per-category Δ](Grounded-SAM-2\outputs\figures\category_delta_min10.png)
+![Per-category Δ](Grounded-SAM-2/outputs/figures/category_delta_min10.png)
 
-![Threshold sensitivity](Grounded-SAM-2\outputs\figures\threshold_sensitivity.png)
+![Threshold sensitivity](Grounded-SAM-2/outputs/figures/threshold_sensitivity.png)
 
 ## Failure / Success 可视化
 
